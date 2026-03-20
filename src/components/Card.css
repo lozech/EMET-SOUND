@@ -1,0 +1,23 @@
+.main-cards .artists-cards{
+    width: 100%;
+    padding-left: 100px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: auto;
+    cursor: grab;
+    user-select: none;
+}
+.main-cards .artists-cards.dragging{
+    cursor: grabbing;
+}
+.main-cards .artist-card * {
+    cursor: grab;
+}
+
+.main-cards .artists-cards.dragging .artist-card * {
+    cursor: grabbing;
+}

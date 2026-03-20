@@ -1,0 +1,144 @@
+.artistdetail .detail{
+    width: calc( 100% - 20% );
+    height: 623px;
+    display:flex;
+    gap: 120px;
+    margin: 0 auto;
+    margin-top: 14%;
+    color:#fff;
+}
+
+/* 왼쪽 이미지 */
+.artistdetail .detail .detail-left .img-box{
+    width:411px;
+    height:623px;
+    border-radius: 40px;
+    object-fit:cover;
+    position: relative;
+}
+
+.artistdetail .detail .detail-left .img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.artistdetail .detail .detail-left .img-box::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0) 40%,
+        rgba(0,0,0,0.95) 90%
+    );
+    border-radius: 40px;
+    z-index: 2;
+}
+.artistdetail .detail .detail-left .img-box .img2{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.artistdetail .detail .detail-left .img-box:hover .img2{
+    opacity: 1;
+}
+
+/* 오른쪽 텍스트 */
+
+
+.artistdetail .detail .detail-right .badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background:#f8cc00;
+    border-radius:23px;
+    width:120px;
+    height: 46px;
+    color: #000;
+}
+
+.artistdetail .detail .detail-right .name{
+    font-size:120px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+
+.artistdetail .detail .detail-right .info{
+    display:flex;
+    gap:50px;
+    margin-bottom:40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.artistdetail .detail .detail-right .info .label{
+    color:#888;
+    margin-bottom:5px;
+}
+
+.artistdetail .videos{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 200px;
+    box-sizing: border-box;
+    height:100vh;
+}
+.artistdetail .videos .video-tit{
+    width: 580px;
+    height: 531px;
+}
+.artistdetail .videos .video-tit .badge-tag p{
+    width: 370px;
+    height: 160px;
+    font-size: 60px;
+    line-height: 80px;
+    color: #fff;
+}
+.artistdetail .videos .video-tit .pagenation{
+    width: 370px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.artistdetail .videos .video-tit .pagenation>div{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.artistdetail .videos .video-cont{
+    width: 100%;
+    padding-right: 50px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: auto;
+}
+.artistdetail .videos .video-cont iframe{
+    border: none;
+    border-radius: 40px;
+    flex-shrink: 0;
+}
+.artistdetail .videos .video-cont iframe.normal{
+    width: 100%;
+    max-width: 942px;
+    aspect-ratio: 16 / 9;
+}
+
+.artistdetail .videos .video-cont iframe.shorts{
+    width: 300px;
+    aspect-ratio: 9 / 16;
+}

@@ -1,0 +1,111 @@
+.about-main{
+    font-family: "Pretendard", sans-serif;
+    width: 100%;
+    padding: 200px 100px 150px;
+    box-sizing: border-box;
+}
+.about-main .about-section1{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.about-main .about-section1 h1{
+    font-family: "Oswald", "Pretendard", sans-serif;
+    font-size: 120px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0 40px;
+}
+.about-main .about-section1 .photo1{
+    display: flex;
+    justify-content: center;
+}
+.about-main .about-section1 .about-txt{
+    width: 100%;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+    white-space: nowrap;
+}
+.about-main .about-section1 .about-txt p{
+    transform: translateY(100px);
+    opacity: 0;
+}
+.about-main .about-section1 .about-txt p:last-child{
+    margin: 150px 0 0;
+}
+
+.about-main .about-section2 .txt2-wrap{
+    display: flex;
+    padding: 180px 0;
+    box-sizing: border-box;
+}
+.about-main .about-section2 .txt2-wrap .txt2-tit{
+    width: 530px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.about-main .about-section2 .txt2-wrap .sec2-cont{
+    color: #7d7d7d;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+}
+.about-main .about-section2 .txt2-wrap .sec2-cont .second-txt{
+    margin-top: 25px;
+}
+.char{
+    color: #7d7d7d;
+}
+
+.about-main .about-last{
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+.about-main .about-last .cont-wrap{
+    position: relative;
+}
+.about-main .about-last .cont-wrap .txt3-wrap{
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: -24%;
+    left: 5%;
+    transform: translateX(-3%);
+    z-index: 9999;
+}
+.about-main .about-last .cont-wrap .txt3-wrap p:first-child{
+    font-weight: 500;
+    line-height: 110px;
+    text-shadow: 6px 6px 12px rgba(0,0,0,0.15);
+}
+.word{
+    display: inline-block;
+    white-space: pre;
+}
+.about-main .about-last .cont-wrap .txt3-wrap p:last-child{
+    font-weight: 700;
+}
+.about-main .about-last .cont-wrap .photo-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+.about-main .about-last .last-txt{
+    margin: 80px auto 0px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+}

@@ -1,0 +1,86 @@
+.article-detail{
+    width: 100%;
+    padding: 200px 100px 150px;
+    box-sizing: border-box;
+}
+.article-detail h1{
+    font-size: 120px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0 0 40px;
+}
+
+.article-detail .article{
+    font-family: "Pretendard", sans-serif;
+    color: #fff;
+}
+.article-detail .article h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.article-detail .article .write-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0px 0px 50px;
+}
+.article-detail .article .write-date img{
+    width: 20px;
+    height: 20px;
+}
+.article-detail .article .content{
+    font-size: 18px;
+    white-space: pre-line;
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    padding: 50px 0;
+}
+.article-detail .article .content span {
+    line-height: 1.6;
+}
+
+.article-detail .article .content span.last {
+    margin-top: 40px;
+    display: block;
+}
+.article-detail .nation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.article-detail .nation .pagenation{
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+.article-detail .nation .pagenation .prevBtn{
+    transform: scaleX(-1);
+}
+.article-detail .nation .pagenation .pageBtn{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article-detail .nation .list-btn{
+    width: 211px;
+    height: 61px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article-detail .nation .list-btn:hover{
+    background-color: #ffffffe0;
+    color: #000;
+}

@@ -1,0 +1,109 @@
+.articleCards {
+    display: flex;
+    gap: 20px;
+}
+.articleCards li{
+    width: calc((100% - 60px) / 4);
+    height: 458px;
+    padding: 50px;
+    border: 1px solid #7d7d7d;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s;
+}
+.articleCards li:hover{
+    transform: translateY(-10%);
+}
+.articleCards li:hover .aricle-txt .tit h1,
+.articleCards li:hover .aricle-txt .tit .cont,
+.articleCards li:hover .aricle-txt .write-date {
+    color: #fff;
+}
+.articleCards li:hover .aricle-txt .write-date img{
+    filter: brightness(10);
+}
+.articleCards li:hover .aricle-txt .thum{
+    opacity: 1;
+}
+.articleCards li:hover  .aricle-txt .thum-wrap::after{
+    opacity: 1;
+}
+.articleCards li .aricle-txt{
+    font-family: "Pretendard", sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.articleCards li .aricle-txt .thum-wrap::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 204, 0, 0.6);
+    border-radius: 20px;
+    mix-blend-mode: normal;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 5;
+}
+.articleCards li .aricle-txt .thum-wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 458px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 2;
+}
+.articleCards li .aricle-txt .thum{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1;
+    position: relative;
+}
+.articleCards li .aricle-txt .tit{
+    padding: 50px;
+    z-index: 3;
+    position: relative;
+}
+.articleCards li .aricle-txt .tit h1{
+    height: 105px;
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.7);
+    word-break: keep-all;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 16px 0 0;
+}
+.articleCards li .aricle-txt .tit .cont{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+.articleCards li .aricle-txt .write-date{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 50px; 
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.articleCards li .aricle-txt .write-date img{
+    width: 20px;
+    height: 20px;
+}
